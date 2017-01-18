@@ -1,0 +1,787 @@
+<div id="page-wrap">
+  <!-- HEADER -->
+  <header id="header" class="header">
+    <!-- TOP NAV -->
+    <div class="top-header">
+      <div class="container">
+        <!-- <div class="row"> -->
+        <div class="ha-phone">
+          <span><i class="fa fa-phone"></i>+27 (0) 11 481 6000</span>
+        </div><!-- /ha-phone -->
+
+        <div class="ha-currency">
+          <ul class="nav">
+            <li id="language_id" class="top-nav-custom">
+              <select name="language" id="language" class="top-select">
+                <option>ENG</option>
+                <option>VIET</option>
+              </select>
+            </li>
+            <li id="currency_id" class="top-nav-custom">
+              <select name="currency" id="currency" class="top-select">
+                <option>USD</option>
+                <option>YEN</option>
+                <option>EUR</option>
+                <option>VND</option>
+              </select>
+            </li>
+          </ul>
+        </div><!-- /ha-currency -->
+        <!-- </div> --><!-- /row -->
+      </div><!-- /container -->
+    </div><!-- /top-header -->
+    <!-- /END TOP NAV -->
+
+    <!-- MAIN HEADER -->
+    <div class="main-header">
+      <div class="container">
+        <!-- <div class="row"> -->
+        <!-- LOGO -->
+        <div class="logo">
+          <a href="index"> <%= image_tag('logo') %> </a>
+        </div><!-- /logo -->
+        <!-- /END LOGO -->
+
+        <!-- MOBILE MENU -->
+        <div class="mobile-nav-menu">
+          <span class="icon">&nbsp;</span>
+        </div><!-- /mobile-nav-menu -->
+        <!-- /END MOBILE MENU -->
+
+        <!-- NAVIGATION -->
+        <nav class="navigation text-right" data-menu-type="1024">
+          <!-- BOOK NOW -->
+          <!-- <div class="book-now-wrap">
+              <div id="toggle-book" class="toggle-book">
+                  <span class="text-uppercase txt-book">Book now</span>
+                  <span class="fa fa-pencil-square-o"></span>
+              </div> --><!-- /toggle-book -->
+          <!-- <div class="book-check-form">
+              <div class="book-content">
+                  <div class="group">
+                      <h4>Check Availability</h4>
+                  </div> -->
+          <!-- <form id="ajax-form-search-room" action="search_step_2.php" method="post"> -->
+          <!-- <ul class="book-list">
+              <li class="book-picker">
+                  <label>Arrive</label>
+                  <div class="input-group custom">
+                      <input type="text" id="date-1" name="arrive" class="datepicker"><span class="input-group-addon custom-icon"><i class="fa fa-calendar"></i></span>
+                  </div>
+              </li>
+              <li class="book-picker">
+                  <label>Departure</label>
+                  <div class="input-group custom">
+                      <input type="text" id="date-2" name="departure" class="datepicker"><span class="input-group-addon custom-icon"><i class="fa fa-calendar"></i></span>
+                  </div>
+              </li>
+              <li class="book-select">
+                  <label>Adults</label>
+                  <div class="form-group custom">
+                    <select class="book-select" id="sel1" name="adults">
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                    </select>
+                  </div>
+              </li>
+              <li class="book-select">
+                  <label>Children</label>
+                  <div class="form-group custom">
+                    <select class="book-select" id="sel2" name="children">
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                    </select>
+                  </div>
+              </li>
+              <li>
+                  <a href="#" id="check-available">Check Availability<span class="icon-arrow">&nbsp;</span></a>
+              </li>
+          </ul> --><!-- /book-now-list -->
+          <!-- </form> -->
+          <!-- </div> --><!-- /book-content -->
+          <!-- </div> --><!-- /book-now-body -->
+          <!-- </div> --><!-- /book-now-wrap -->
+          <!-- /END BOOK NOW -->
+
+          <!-- NAV -->
+          <ul class="nav text-uppercase">
+            <li class="menu-item-has-children">
+              <a href="#">Home<span class="fa fa-angle-down"></span></a>
+              <ul class="sub-menu">
+                <li><a href="index.html">Homepage 1</a></li>
+                <li><a href="index-event.html">Homepage 1 Event</a></li>
+                <li><a href="index-2.html">Homepage 2</a></li>
+                <li><a href="index-2-event.html">Homepage 2 Event</a></li>
+                <li><a href="index-3.html">Homepage 3</a></li>
+                <li><a href="index-3-event.html">Homepage 3 Event</a></li>
+                <li><a href="index-4.html">Homepage 4</a></li>
+                <li><a href="index-4-event.html">Homepage 4 Event</a></li>
+              </ul>
+            </li>
+            <li class="menu-item-has-children">
+              <a href="#">Room &amp; Rates<span class="fa fa-angle-down"></span></a>
+              <ul class="sub-menu">
+                <li><a href="room-modem.html">Room Modem</a></li>
+                <li><a href="room-grid.html">Room Grid</a></li>
+                <li><a href="room-list.html">Room List</a></li>
+                <li><a href="room-simple.html">Room Simple</a></li>
+                <li><a href="room-thumbnail.html">Room Thumbnail</a></li>
+              </ul>
+            </li>
+            <li><a href="activity.html">Activities</a></li>
+            <li class="menu-item-has-children">
+              <a href="#">Galleries<span class="fa fa-angle-down"></span></a>
+              <ul class="sub-menu">
+                <li><a href="gallery-1.html">Gallery 1</a></li>
+                <li><a href="gallery-2.html">Gallery 2</a></li>
+                <li><a href="gallery-3.html">Gallery 3</a></li>
+                <li><a href="gallery-4.html">Gallery 4</a></li>
+              </ul>
+            </li>
+            <li><a href="package.html">Packages</a></li>
+            <li class="menu-item-has-children">
+              <a href="#">Pages<span class="fa fa-angle-down"></span></a>
+              <ul class="sub-menu">
+                <li><a href="about.html">About</a></li>
+                <li><a href="404.html">404 Page</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="attraction.html">Attraction</a></li>
+                <li><a href="restaurant.html">Restaurant</a></li>
+                <li><a href="wedding.html">Wedding</a></li>
+                <li><a href="spa.html">Spa</a></li>
+                <li><a href="event.html">Event</a></li>
+                <li><a href="coming-soon.html">Coming soon</a></li>
+                <li><a href="guest-book.html">Guest Book</a></li>
+                <li><a href="shortcode.html">Short Code</a></li>
+              </ul>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul><!-- /nav -->
+          <!-- / END NAV -->
+        </nav><!-- /navigation -->
+        <!-- /END NAVIGATION -->
+        <!-- </div> --><!-- /row -->
+      </div><!-- /container -->
+    </div><!-- /main-header -->
+    <!-- /END MAIN HEADER -->
+  </header><!-- /header -->
+  <!-- /END HEADER -->
+
+  <!-- HOME MEDIA -->
+  <section id="homemedia" class="section pt-0 pb-0">
+    <div class="tp-banner-container">
+      <div class="tp-banner" >
+        <ul>
+          <!-- SLIDE 1  -->
+          <li data-transition="random" data-slotamount="7" data-masterspeed="500" data-thumb="img/slider/thumb/thumb-3.jpg"  data-saveperformance="on"  data-title="Intro Slide">
+            <!-- MAIN IMAGE -->
+            <%= image_tag('slider/dummy') %>
+            <img src="img/slider/dummy.png"  alt="slidebg1" data-lazyload="img/slider/slide-3.jpg" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
+            <!-- LAYERS -->
+
+            <!-- LAYER NR. 1 -->
+            <div class="tp-caption grey_heavy_72 sft tp-resizeme rs-parallaxlevel-0 tp-small"
+                 data-x="center"
+                 data-y="190"
+                 data-speed="500"
+                 data-start="1050"
+                 data-easing="Power3.easeInOut"
+                 data-splitin="lines"
+                 data-splitout="none"
+                 data-elementdelay="0.1"
+                 data-endelementdelay="0.1"
+                 style="z-index: 99; max-width: auto; max-height: auto; white-space: nowrap;">Signature Menu
+            </div>
+
+            <!-- LAYER NR. 2 -->
+            <div class="tp-caption grey_heavy_72 sfl tp-resizeme rs-parallaxlevel-0 tp-large"
+                 data-x="center"
+                 data-y="270"
+                 data-speed="500"
+                 data-start="1350"
+                 data-easing="Power3.easeInOut"
+                 data-splitin="lines"
+                 data-splitout="none"
+                 data-elementdelay="0.1"
+                 data-endelementdelay="0.1"
+                 style="z-index: 99; max-width: auto; max-height: auto; white-space: nowrap;">Cuisine is based
+            </div>
+
+            <!-- LAYER NR. 3 -->
+            <div class="tp-caption grey_heavy_72 sfr tp-resizeme rs-parallaxlevel-0 tp-large"
+                 data-x="center"
+                 data-y="350"
+                 data-speed="500"
+                 data-start="1550"
+                 data-easing="Power3.easeInOut"
+                 data-splitin="lines"
+                 data-splitout="none"
+                 data-elementdelay="0.1"
+                 data-endelementdelay="0.1"
+                 style="z-index: 99; max-width: auto; max-height: auto; white-space: nowrap;">on a dare
+            </div>
+
+            <!-- LAYER NR. 4 -->
+            <div class="tp-caption grey_heavy_72 sft tp-resizeme rs-parallaxlevel-0 tp-small"
+                 data-x="center"
+                 data-y="475"
+                 data-speed="500"
+                 data-start="1750"
+                 data-easing="Power3.fadeIn"
+                 data-splitin="lines"
+                 data-splitout="none"
+                 data-elementdelay="0.1"
+                 data-endelementdelay="0.1"
+                 style="z-index: 99; max-width: auto; max-height: auto; white-space: nowrap;">“The food was absolutely delicious”
+            </div>
+
+            <!-- LAYER NR. 5 -->
+            <div class="tp-caption grey_heavy_72 sfb tp-resizeme rs-parallaxlevel-0 tp-xs"
+                 data-x="center"
+                 data-y="510"
+                 data-speed="500"
+                 data-start="2050"
+                 data-easing="Power3.fadeIn"
+                 data-splitin="lines"
+                 data-splitout="none"
+                 data-elementdelay="0.1"
+                 data-endelementdelay="0.1"
+                 style="z-index: 99; max-width: auto; max-height: auto; white-space: nowrap;">Craig Buckenham
+            </div>
+          </li>
+
+          <!-- SLIDE 2 -->
+          <li data-transition="random" data-slotamount="7" data-masterspeed="500" data-thumb="img/slider/thumb/thumb-2.jpg"  data-saveperformance="on"  data-title="Intro Slide">
+            <!-- MAIN IMAGE -->
+            <img src="img/slider/dummy.png"  alt="slidebg1" data-lazyload="img/slider/slide-2.jpg" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
+            <!-- LAYERS -->
+
+            <!-- LAYER NR. 1 -->
+            <div class="tp-caption grey_heavy_72 lft tp-resizeme rs-parallaxlevel-0 tp-small"
+                 data-x="center"
+                 data-y="220"
+                 data-speed="500"
+                 data-start="1250"
+                 data-easing="Power3.easeInOut"
+                 data-splitin="lines"
+                 data-splitout="none"
+                 data-elementdelay="0.1"
+                 data-endelementdelay="0.1"
+                 style="z-index: 99; max-width: auto; max-height: auto; white-space: nowrap;">Memmorable Wedding Event
+            </div>
+
+            <!-- LAYER NR. 2 -->
+            <div class="tp-caption grey_heavy_72 lfb tp-resizeme rs-parallaxlevel-0 tp-large"
+                 data-x="center"
+                 data-y="280"
+                 data-speed="500"
+                 data-start="1550"
+                 data-easing="Power3.easeInOut"
+                 data-splitin="lines"
+                 data-splitout="none"
+                 data-elementdelay="0.1"
+                 data-endelementdelay="0.1"
+                 style="z-index: 99; max-width: auto; max-height: auto; white-space: nowrap;">Once in a lifetime
+            </div>
+
+            <!-- LAYER NR. 3 -->
+            <div class="tp-caption grey_heavy_72 lfl tp-resizeme rs-parallaxlevel-0 tp-xs"
+                 data-x="center"
+                 data-y="415"
+                 data-speed="500"
+                 data-start="1750"
+                 data-easing="Power3.easeInOut"
+                 data-splitin="lines"
+                 data-splitout="none"
+                 data-elementdelay="0.1"
+                 data-endelementdelay="0.1"
+                 style="z-index: 99; max-width: auto; max-height: auto; white-space: nowrap;">“A wedding is and event, but marriage is a life”
+            </div>
+
+            <!-- LAYER NR. 4 -->
+            <div class="tp-caption grey_heavy_72 lfr tp-resizeme rs-parallaxlevel-0 tp-xs"
+                 data-x="center"
+                 data-y="450"
+                 data-speed="500"
+                 data-start="2050"
+                 data-easing="Power3.easeInOut"
+                 data-splitin="lines"
+                 data-splitout="none"
+                 data-elementdelay="0.1"
+                 data-endelementdelay="0.1"
+                 style="z-index: 99; max-width: auto; max-height: auto; white-space: nowrap;">-Myles Munroe-
+            </div>
+          </li>
+        </ul>
+        <div class="tp-bannertimer"></div>
+      </div><!-- /tp-banner -->
+    </div><!-- /tp-banner-container -->
+
+    <div class="book-check-form" data-menu-type="1199">
+      <div class="container">
+        <div class="book-content">
+          <div class="group">
+            <h4>Check Availability</h4>
+            <h6>Choose date &amp; Check now</h6>
+          </div>
+          <form id="ajax-form-search-room" action="search_step_2.php" method="post">
+            <ul class="book-list">
+              <li class="book-picker">
+                <label>Arrive</label>
+                <div class="input-group custom">
+                  <input type="text" id="date-1" name="arrive" class="datepicker"><span class="input-group-addon custom-icon"><i class="fa fa-calendar"></i></span>
+                </div>
+              </li>
+              <li class="book-picker">
+                <label>Departure</label>
+                <div class="input-group custom">
+                  <input type="text" id="date-2" name="departure" class="datepicker"><span class="input-group-addon custom-icon"><i class="fa fa-calendar"></i></span>
+                </div>
+              </li>
+              <li class="book-select">
+                <label>Adults</label>
+                <div class="form-group custom">
+                  <select class="book-select" id="sel1" name="adults">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                  </select>
+                </div>
+              </li>
+              <li class="book-select">
+                <label>Children</label>
+                <div class="form-group custom">
+                  <select class="book-select" id="sel2" name="children">
+                    <option>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                  </select>
+                </div>
+              </li>
+              <li>
+                <a href="#" id="check-available">Check Availability<span class="icon-arrow">&nbsp;</span></a>
+              </li>
+            </ul>
+          </form>
+        </div><!-- /book-content -->
+      </div><!-- /container -->
+    </div><!-- /book-check-form -->
+  </section>
+  <!-- /END HOME MEDIA -->
+
+  <!-- GROUP TEXT -->
+  <section class="section pt-0 pb-0">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 pr-0 bg-white">
+          <div class="half-block fr">
+            <h1 class="sbig"><a href="#">History of Caruso Luxury Hotel</a></h1>
+            <h5>Caruso Hotel is known for luxurious accommodation in Johannesburg, successful functions, dream weddings and delicious dining</h5>
+            <a href="#" class="btn btn-classic black">Read more<span class="icon-btn-arrow"><span class="inner">&nbsp;</span></span></a>
+          </div><!-- /wrapper -->
+        </div><!-- /col -->
+
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 pl-0">
+          <div class="half-block fl">
+            <p class="fw-bold">Room Amenities:</p>
+            <ul>
+              <li>-- Free wifi around hotel</li>
+              <li>-- 24-hour Concierge service</li>
+              <li>-- 25 inch or larger TV</li>
+              <li>-- Satellite TV and DVD player</li>
+              <li>-- Writing desk</li>
+              <li>-- Climate control</li>
+              <li>-- Wireless internet</li>
+              <li>-- Oversized work desk</li>
+              <li>-- Hairdryer</li>
+              <li>-- Iron/ironing board upon request</li>
+            </ul>
+          </div><!-- /wrapper -->
+        </div><!-- /col -->
+      </div><!-- /row -->
+    </div><!-- /container -->
+  </section>
+  <!-- /END GROUP TEXT -->
+
+  <!-- SUB BANNER -->
+  <section class="section bg-parallax pt-20 pb-10" style="background-image: url(img/bg/index.jpg);"></section>
+  <!-- /END SUB BANER -->
+
+  <!-- ROOM RATE SLIDER -->
+  <section class="section pt-7 pb-7 bg-white">
+    <div class="container">
+      <div class="row">
+        <h2 class="section-title text-center">Room &amp; Rates</h2>
+        <h3 class="section-desc text-center fsi">Contrary to popular belief, Lorem Ipsum is not simply random text</h3>
+        <div class="roomrate-slider">
+          <!-- ITEM -->
+          <div class="item ef-width">
+            <div class="post-thumbnail">
+              <img src="img/index-2/visit/1.jpg" alt="" />
+              <a href="#" class="overlay"><span class="fa fa-search"></span></a>
+            </div><!-- /post-media -->
+
+            <div class="post-body">
+              <h2 class="h4">Superior Room</h2>
+            </div><!-- /post-body -->
+          </div><!-- /item -->
+          <!-- /ITEM -->
+
+          <!-- ITEM -->
+          <div class="item ef-width">
+            <div class="post-thumbnail">
+              <img src="img/index-2/visit/2.jpg" alt="" />
+              <a href="#" class="overlay"><span class="fa fa-search"></span></a>
+            </div><!-- /post-media -->
+
+            <div class="post-body">
+              <h2 class="h4">Superior Room</h2>
+            </div><!-- /post-body -->
+          </div><!-- /item -->
+          <!-- /ITEM -->
+
+          <!-- ITEM -->
+          <div class="item ef-width">
+            <div class="post-thumbnail">
+              <img src="img/index-2/visit/3.jpg" alt="" />
+              <a href="#" class="overlay"><span class="fa fa-search"></span></a>
+            </div><!-- /post-media -->
+
+            <div class="post-body">
+              <h2 class="h4">Superior Room</h2>
+            </div><!-- /post-body -->
+          </div><!-- /item -->
+          <!-- /ITEM -->
+
+          <!-- ITEM -->
+          <div class="item ef-width">
+            <div class="post-thumbnail">
+              <img src="img/index-2/visit/1.jpg" alt="" />
+              <a href="#" class="overlay"><span class="fa fa-search"></span></a>
+            </div><!-- /post-media -->
+
+            <div class="post-body">
+              <h2 class="h4">Superior Room</h2>
+            </div><!-- /post-body -->
+          </div><!-- /item -->
+          <!-- /ITEM -->
+
+          <!-- ITEM -->
+          <div class="item ef-width">
+            <div class="post-thumbnail">
+              <img src="img/index-2/visit/2.jpg" alt="" />
+              <a href="#" class="overlay"><span class="fa fa-search"></span></a>
+            </div><!-- /post-media -->
+
+            <div class="post-body">
+              <h2 class="h4">Superior Room</h2>
+            </div><!-- /post-body -->
+          </div><!-- /item -->
+          <!-- /ITEM -->
+
+          <!-- ITEM -->
+          <div class="item ef-width">
+            <div class="post-thumbnail">
+              <img src="img/index-2/visit/3.jpg" alt="" />
+              <a href="#" class="overlay"><span class="fa fa-search"></span></a>
+            </div><!-- /post-media -->
+
+            <div class="post-body">
+              <h2 class="h4">Superior Room</h2>
+            </div><!-- /post-body -->
+          </div><!-- /item -->
+          <!-- /ITEM -->
+        </div><!-- /roomrate-slider -->
+
+        <div class="text-center mt-5">
+          <a href="#" class="btn btn-classic">View more Room<span class="icon-btn-arrow"><span class="inner">&nbsp;</span></span></a>
+        </div><!-- /post-footer -->
+      </div><!-- /row -->
+    </div><!-- /container -->
+  </section>
+  <!-- /END ROOM RATE SLIDER -->
+
+  <!-- NEWS -->
+  <section class="section pt-7 pb-10">
+    <div class="container">
+      <div class="row">
+        <h2 class="section-title">News</h2>
+        <div class="news-slider-2">
+          <!-- ITEM -->
+          <div class="item ef-width">
+            <div class="wrapper">
+              <div class="post-thumbnail">
+                <%= image_tag('index-2/news/news-1') %>
+                <a href="#" class="overlay"><span class="fa fa-search"></span></a>
+              </div><!-- /post-thumbnail -->
+              <div class="post-body">
+                <span class="date">12 / July</span>
+                <h2 class="h5 mb-2" data-number-line="2"><a href="#">Sed molestie porttitor</a></h2>
+                <a href="#" class="btn btn-classic">Read more<span class="icon-btn-arrow"><span class="inner">&nbsp;</span></span></a>
+              </div><!-- /post-body -->
+              <div class="clearfix"></div>
+            </div><!-- /wrapper -->
+          </div><!-- /item -->
+          <!-- /ITEM -->
+
+          <!-- ITEM -->
+          <div class="item ef-width">
+            <div class="wrapper">
+              <div class="post-thumbnail">
+                <%= image_tag('index-2/news/news-2') %>
+                <a href="#" class="overlay"><span class="fa fa-search"></span></a>
+              </div><!-- /post-thumbnail -->
+              <div class="post-body">
+                <span class="date">12 / July</span>
+                <h2 class="h5 mb-2" data-number-line="2"><a href="#">Vestibulum sagittis sollicitudin quam a facilisis</a></h2>
+                <a href="#" class="btn btn-classic">Read more<span class="icon-btn-arrow"><span class="inner">&nbsp;</span></span></a>
+              </div><!-- /post-body -->
+              <div class="clearfix"></div>
+            </div><!-- /wrapper -->
+          </div><!-- /item -->
+          <!-- /ITEM -->
+
+          <!-- ITEM -->
+          <div class="item ef-width">
+            <div class="wrapper">
+              <div class="post-thumbnail">
+                <%= image_tag('index-2/news/news-3') %>
+                <a href="#" class="overlay"><span class="fa fa-search"></span></a>
+              </div><!-- /post-thumbnail -->
+              <div class="post-body">
+                <span class="date">12 / July</span>
+                <h2 class="h5 mb-2" data-number-line="2"><a href="#">Pellentesque eleifend eleifend orci vel maximus</a></h2>
+                <a href="#" class="btn btn-classic">Read more<span class="icon-btn-arrow"><span class="inner">&nbsp;</span></span></a>
+              </div><!-- /post-body -->
+              <div class="clearfix"></div>
+            </div><!-- /wrapper -->
+          </div><!-- /item -->
+          <!-- /ITEM -->
+
+          <!-- ITEM -->
+          <div class="item ef-width">
+            <div class="wrapper">
+              <div class="post-thumbnail">
+                <%= image_tag('index-2/news/news-2') %>
+                <a href="#" class="overlay"><span class="fa fa-search"></span></a>
+              </div><!-- /post-thumbnail -->
+              <div class="post-body">
+                <span class="date">12 / July</span>
+                <h2 class="h5 mb-2" data-number-line="2"><a href="#">Finibus Bonorum et Maloru, written by Cicero</a></h2>
+                <a href="#" class="btn btn-classic">Read more<span class="icon-btn-arrow"><span class="inner">&nbsp;</span></span></a>
+              </div><!-- /post-body -->
+              <div class="clearfix"></div>
+            </div><!-- /wrapper -->
+          </div><!-- /item -->
+          <!-- /ITEM -->
+        </div><!-- /news-slider -->
+      </div><!-- /row -->
+    </div><!-- /container -->
+  </section>
+  <!-- /END NEWS -->
+
+  <!-- BACK TO TOP -->
+  <div id="fixedTop" class="fixedTop">
+    <a href="javascript:void(0);"><span class="icon-arrow"><span class="inner">&nbsp;</span></span>Back<br /> to top</a>
+  </div><!-- /fixTop -->
+  <!-- END BACK TO TOP -->
+
+  <!-- TOP FOOTER -->
+  <section class="section bg-dark pb-0">
+    <div class="top-foot">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-7 col-md-6 col-sm-6 col-xs-12">
+            <aside class="widget widget_subscribe">
+              <div class="widget-header">
+                <h2 class="widget-title">Sign up for newsletter</h2>
+                <p class="caption">RECEIVE NEWS OF CARUSO HOTEL</p>
+              </div>
+
+              <div class="widget-content">
+                <form action="subscribe" method="post">
+                  <div class="input-group custom">
+                    <input type="email" name="email" value="" placeholder="Enter your email address...">
+                    <button type="submit" class="btn-subscribe"><span class="icon-arrow"></span></button>
+                  </div><!-- /input-group -->
+                </form>
+              </div>
+            </aside><!-- /widget_subscribe -->
+          </div><!-- /col-7 wrap -->
+
+          <div class="col-lg-5 col-md-6 col-sm-6 col-xs-12">
+            <aside class="widget widget_social">
+              <div class="widget-header">
+                <h2 class="widget-title">Connect with us</h2>
+                <p class="caption">SOCIAL MEDIA CHANNEL</p>
+              </div>
+              <div class="widget-content">
+                <ul class="social-list">
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-facebook"></i>
+                      <i class="fa fa-facebook back"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-twitter"></i>
+                      <i class="fa fa-twitter back"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-google-plus"></i>
+                      <i class="fa fa-google-plus back"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-instagram"></i>
+                      <i class="fa fa-instagram back"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-vimeo"></i>
+                      <i class="fa fa-vimeo back"></i>
+                    </a>
+                  </li>
+                </ul><!-- social-list -->
+              </div>
+            </aside><!-- /widget_social -->
+          </div><!-- /col-5 wrap -->
+        </div><!-- /row -->
+      </div><!-- /container -->
+    </div><!-- /top-foot -->
+  </section>
+  <!-- /END TOP FOOTER -->
+
+  <!-- FOOTER -->
+  <footer id="footer" class="footer bg-darker pt-5">
+    <div class="container">
+      <div class="foot-feature pb-3">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+            <aside class="widget widget_contact">
+              <div class="widget-header">
+                <h2 class="widget-title">Contact</h2>
+              </div>
+              <div class="widget-content">
+                <div class="logo">
+                  <a href="#"><%= image_tag('logo_small') %></a>
+                </div><!-- /foot-logo -->
+                <h5>supportcaruso@gmail.com</h5>
+                <h6 class="text-uppercase">Email Address</h6>
+                <h5>P.O. Box 2700, Saxonwold 2132</h5>
+                <h6 class="text-uppercase">Address</h6>
+                <h5>+27 (0) 11 481 6000</h5>
+                <h6 class="text-uppercase">Phone</h6>
+              </div>
+            </aside><!-- /widget_contact -->
+          </div><!-- /col-3 -->
+
+          <div class="col-lg-3 col-lg-offset-1 col-lg-push-5 col-md-6 col-sm-6 col-xs-12">
+            <aside class="widget widget_twitter">
+              <div class="widget-header">
+                <h2 class="widget-title">Latest Tweet</h2>
+              </div>
+              <div class="widget-content">
+                <ol class="tweet">
+                  <li>
+                    <h5><a href="#">How to Work Both Creatively And Productively ...</a></h5>
+                    <div class="sub-tweet">
+                      <a href="#">http://t.co/OkIWb1VZlf</a>
+                      <a href="#">http://t.co/qROP4wUSSn</a>
+                    </div>
+                    <h6 class="text-uppercase">19 hours ago</h6>
+                  </li>
+
+                  <li>
+                    <h5><a href="#">Learn how creative agency VOON uses @EnvatoMarket items to create ads for Hyundai &amp; Mitsubishi ... </a></h5>
+                    <div class="sub-tweet">
+                      <a href="#">http://t.co/OkIWb1VZlf</a>
+                      <a href="#">http://t.co/qROP4wUSSn</a>
+                    </div>
+                    <h6 class="text-uppercase">19 hours ago</h6>
+                  </li>
+                </ol><!-- /foot-tweet -->
+              </div>
+            </aside><!-- /widget_twitter -->
+          </div><!-- /col-3 -->
+
+          <div class="col-lg-2 col-lg-offset-1 col-lg-pull-4 col-md-6 col-sm-6 col-xs-12">
+            <aside class="widget widget_pages">
+              <div class="widget-header">
+                <h2 class="widget-title">Hotel</h2>
+              </div>
+              <div class="widget-content">
+                <ul class="list text-capitalize">
+                  <li><a href="#">Accommodation</a></li>
+                  <li><a href="#">Photos &amp; Videos</a></li>
+                  <li><a href="#">Services &amp; Amenities</a></li>
+                  <li><a href="#">Dining</a></li>
+                  <li><a href="#">Spa</a></li>
+                  <li><a href="#">Destination</a></li>
+                  <li><a href="#">Offer</a></li>
+                </ul>
+              </div>
+              <div class="widget-footer">
+                <h2 class="mb-0">4 <span><sup>o</sup>C</span> / 39 <span><sup>o</sup>F</span></h2>
+                <h6 class="text-uppercase">Local Temperature</h6>
+              </div>
+            </aside><!-- /widget_pages -->
+          </div><!-- /col-2 -->
+
+          <div class="col-lg-2 col-lg-pull-4 col-md-6 col-sm-6 col-xs-12">
+            <aside class="widget widget_pages pb-0" style="border-bottom: 0;">
+              <div class="widget-header">
+                <h2 class="widget-title">Inquires</h2>
+              </div>
+              <div class="widget-content">
+                <ul class="list text-capitalize">
+                  <li><a href="#">About four seasons</a></li>
+                  <li><a href="#">Press room</a></li>
+                  <li><a href="#">Gift cards</a></li>
+                  <li><a href="#">Residences</a></li>
+                  <li><a href="#">Careers</a></li>
+                  <li><a href="#">Contact us</a></li>
+                  <li></li>
+                </ul>
+              </div>
+              <div class="widget-footer">
+                <h2 class="mb-0">06:58 <span>AM</span></h2>
+                <h6 class="text-uppercase">Local Time</h6>
+              </div>
+            </aside><!-- /widget_pages -->
+          </div><!-- /col-2 -->
+        </div><!-- /row -->
+      </div><!-- /top-foot -->
+
+      <!-- FOOT CREDIT -->
+      <div class="foot-credit pt-3 pb-3">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+            <h6>Copyright © 2015 | Caruso Eco Hotel</h6>
+          </div><!-- /col-6 -->
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-right">
+            <ul class="checkout-list">
+              <li><a href="#"><%= image_tag('paypal') %></a></li>
+              <li><a href="#"><%= image_tag('visa') %></a></li>
+              <li><a href="#"><%= image_tag('express') %></a></li>
+            </ul>
+          </div><!-- /col- -->
+        </div><!-- /row -->
+      </div><!-- /foot-credit -->
+      <!-- /END FOOT CREDIT -->
+    </div><!-- /container -->
+  </footer><!-- /footer -->
+  <!-- END FOOTER -->
+</div><!-- /page-wrap -->
